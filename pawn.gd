@@ -32,6 +32,8 @@ func _ready():
 
 func _physics_process(delta):
 	add_force(Vector2(), thrust)
+	#should be something like:
+	#add_force(Vector2(), thrust * delta * 100)
 	
 	pass
 	

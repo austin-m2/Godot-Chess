@@ -10,7 +10,7 @@ custom_solver_bias = 0.0
 radius = 1.52235
 height = 5.14662
 
-[node name="rook" type="RigidBody2D" index="0"]
+[node name="rook" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 1
