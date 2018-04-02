@@ -34,37 +34,37 @@ func _physics_process(delta):
 	impulse = clamp(impulse, 0, 400)
 	#print(impulse)
 	
+	var left_held = Input.is_action_pressed("ui_left")
+	var right_held = Input.is_action_pressed("ui_right")
+	var up_held = Input.is_action_pressed("ui_up")
+	var down_held = Input.is_action_pressed("ui_down")
 	
-	if (Input.is_action_just_released("ui_right")):
+	
+	var only_right_just_released = Input.is_action_just_released("ui_right") && !(left_held || up_held || down_held)
+	var only_left_just_released = Input.is_action_just_released("ui_left") && !(right_held || up_held || down_held)
+	var only_up_just_released = Input.is_action_just_released("ui_up") && !(left_held || right_held || down_held)	
+	var only_down_just_released = Input.is_action_just_released("ui_down") && !(left_held || up_held || right_held)
+	
+	
+	if (only_right_just_released):
 		set_linear_damp(1.15)
 		apply_impulse(Vector2(), Vector2(impulse, 0))
 		impulse = 0
 		
-	if (Input.is_action_just_released("ui_left")):
+	if (only_left_just_released):
 		set_linear_damp(1.15)
 		apply_impulse(Vector2(), Vector2(-impulse, 0))
 		impulse = 0
 	
-	if (Input.is_action_just_released("ui_up")):
+	if (only_up_just_released):
 		set_linear_damp(1.15)
 		apply_impulse(Vector2(), Vector2(0, -impulse))
 		impulse = 0
 		
-	if (Input.is_action_just_released("ui_down")):
+	if (only_down_just_released):
 		set_linear_damp(1.15)
 		apply_impulse(Vector2(), Vector2(0, impulse))
 		impulse = 0
 	
-	
-	
 
-	
-#	if (Input.is_action_just_pressed("ui_right")):
-#		apply_impulse(Vector2(), Vector2(impulse, 0))
-#	if (Input.is_action_just_pressed("ui_left")):
-#		apply_impulse(Vector2(), Vector2(-impulse, 0))
-#	if (Input.is_action_just_pressed("ui_up")):
-#		apply_impulse(Vector2(), Vector2(0, -impulse))
-#	if (Input.is_action_just_pressed("ui_down")):
-#		apply_impulse(Vector2(), Vector2(0, impulse))
 	pass
