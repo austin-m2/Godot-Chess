@@ -9,7 +9,7 @@ custom_solver_bias = 0.0
 radius = 1.50815
 height = 5.16515
 
-[node name="pawn" type="RigidBody2D" index="0"]
+[node name="pawn" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 1
