@@ -9,7 +9,7 @@ custom_solver_bias = 0.0
 radius = 1.50815
 height = 5.16515
 
-[node name="pawn" type="RigidBody2D"]
+[node name="pawn" type="RigidBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -40,7 +40,7 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( -1.74846e-07, 4 )
+position = Vector2( -0.5, 4 )
 rotation = 1.5708
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
