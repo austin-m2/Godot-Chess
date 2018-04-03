@@ -5,6 +5,7 @@ extends RigidBody2D
 # var b = "textvar"
 export(float) var impulse = 0.0
 export(float) var max_impulse = 200.0
+var selected = false
 
 func _ready():
 	# Called every time the node is added to the scene.

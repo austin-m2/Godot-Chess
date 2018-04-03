@@ -14,7 +14,7 @@ height = 5.16515
 custom_solver_bias = 0.0
 extents = Vector2( 3.99547, 1.5244 )
 
-[node name="pawn" type="RigidBody2D" index="0"]
+[node name="pawn" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 1

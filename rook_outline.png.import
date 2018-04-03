@@ -7,10 +7,10 @@ path="res://.import/rook_outline.png-5b5b98c54daefdafa2e2ee274ab6544c.stex"
 [deps]
 
 source_file="res://rook_outline.png"
-source_md5="bb0a39c0bc9942f26e77f2cbfbfa8bcd"
+source_md5="c3ba197705bdcbe0a17286d7973bda22"
 
 dest_files=[ "res://.import/rook_outline.png-5b5b98c54daefdafa2e2ee274ab6544c.stex" ]
-dest_md5="2204af6681a7f59bf12de85fbfc9aedd"
+dest_md5="b2c0618ab7fa962e5bd9daa3bac80e4f"
 
 [params]
 
